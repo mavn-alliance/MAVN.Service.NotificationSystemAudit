@@ -21,7 +21,7 @@ namespace MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lykke.Service.NotificationSystemAudit.MsSqlRepositories.Entities.AuditMessage", b =>
+            modelBuilder.Entity("MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Entities.AuditMessage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
