@@ -15,7 +15,7 @@ env:
   CONTRACT_PROJECT: ./contract/MAVN.Service.NotificationSystemAudit.Contract/MAVN.Service.NotificationSystemAudit.Contract.csproj
   JOB_DOCKER_IMAGE:
   JOB_PROJECT:
-  SERVICE_DOCKER_IMAGE: notification-systemAudit-service
+  SERVICE_DOCKER_IMAGE: notification-system-audit-service
   SERVICE_PROJECT: ./src/MAVN.Service.NotificationSystemAudit/MAVN.Service.NotificationSystemAudit.csproj
     
   
