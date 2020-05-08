@@ -5,9 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Falcon.Service.NotificationSystem.Contract" Version="1.0.8" />
-    <PackageReference Include="Falcon.Service.NotificationSystemBroker.Contract" Version="1.0.7" />
     <PackageReference Include="Lykke.RabbitMqBroker" Version="7.13.1" />
+    <PackageReference Include="MAVN.Service.NotificationSystem.Contract" Version="1.1.0" />
+    <PackageReference Include="MAVN.Service.NotificationSystemBroker.Contract" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MAVN.Service.NotificationSystemAudit.Domain\MAVN.Service.NotificationSystemAudit.Domain.csproj" />

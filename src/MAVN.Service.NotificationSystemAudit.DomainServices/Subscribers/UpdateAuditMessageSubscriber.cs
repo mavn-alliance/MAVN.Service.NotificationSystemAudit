@@ -3,7 +3,7 @@ using AutoMapper;
 using Lykke.Common.Log;
 using MAVN.Service.NotificationSystemAudit.Domain.Contracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Services;
-using Lykke.Service.NotificationSystemBroker.Contract;
+using MAVN.Service.NotificationSystemBroker.Contract;
 
 namespace MAVN.Service.NotificationSystemAudit.DomainServices.Subscribers
 {

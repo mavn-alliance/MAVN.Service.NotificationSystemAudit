@@ -1,9 +1,9 @@
 using AutoMapper;
 using JetBrains.Annotations;
-using Lykke.Service.NotificationSystem.Contract.MessageContracts;
+using MAVN.Service.NotificationSystem.Contract.MessageContracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Contracts;
-using Lykke.Service.NotificationSystemBroker.Contract;
-using Lykke.Service.NotificationSystemBroker.Contract.Enums;
+using MAVN.Service.NotificationSystemBroker.Contract;
+using MAVN.Service.NotificationSystemBroker.Contract.Enums;
 
 namespace MAVN.Service.NotificationSystemAudit.DomainServices
 {
