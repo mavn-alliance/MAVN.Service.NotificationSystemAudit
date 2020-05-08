@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.NotificationSystemAudit.Domain.Contracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Enums;
 using MAVN.Service.NotificationSystemAudit.Domain.Repositories;

@@ -1,5 +1,5 @@
 using Autofac;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.NotificationSystemAudit.Domain.Repositories;
 using MAVN.Service.NotificationSystemAudit.MsSqlRepositories;
 using MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Repositories;
