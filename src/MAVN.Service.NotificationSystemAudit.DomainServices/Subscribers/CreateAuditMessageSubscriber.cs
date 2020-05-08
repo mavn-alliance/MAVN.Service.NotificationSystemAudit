@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using Lykke.Common.Log;
-using Lykke.Service.NotificationSystem.Contract.MessageContracts;
+using MAVN.Service.NotificationSystem.Contract.MessageContracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Contracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Services;
 
