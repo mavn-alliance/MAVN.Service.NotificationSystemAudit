@@ -1,12 +1,12 @@
-using System.Data.Common;
+﻿using System.Data.Common;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.NotificationSystemAudit.MsSqlRepositories
 {
-    public class AuditMessageContext : MsSqlContext
+    public class AuditMessageContext : PostgreSQLContext
     {
         private const string Schema = "auditmessage";
 
@@ -29,7 +29,7 @@ namespace MAVN.Service.NotificationSystemAudit.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
             var auditMessageEntityBuilder = modelBuilder.Entity<AuditMessage>();
 
