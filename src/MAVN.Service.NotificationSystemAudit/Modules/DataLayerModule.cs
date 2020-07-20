@@ -1,10 +1,10 @@
-using Autofac;
-using MAVN.Common.MsSql;
+﻿using Autofac;
 using MAVN.Service.NotificationSystemAudit.Domain.Repositories;
 using MAVN.Service.NotificationSystemAudit.MsSqlRepositories;
 using MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Repositories;
 using MAVN.Service.NotificationSystemAudit.Settings;
 using Lykke.SettingsReader;
+using MAVN.Persistence.PostgreSQL.Legacy;
 
 namespace MAVN.Service.NotificationSystemAudit.Modules
 {
@@ -19,7 +19,7 @@ namespace MAVN.Service.NotificationSystemAudit.Modules
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _connectionString,
                 connString => new AuditMessageContext(connString, false),
                 dbConn => new AuditMessageContext(dbConn));

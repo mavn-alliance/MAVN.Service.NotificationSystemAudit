@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.NotificationSystemAudit.Domain.Contracts;
 using MAVN.Service.NotificationSystemAudit.Domain.Enums;
 using MAVN.Service.NotificationSystemAudit.Domain.Repositories;
@@ -14,10 +14,10 @@ namespace MAVN.Service.NotificationSystemAudit.MsSqlRepositories.Repositories
 {
     public class AuditMessageRepository : IAuditMessageRepository
     {
-        private readonly MsSqlContextFactory<AuditMessageContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<AuditMessageContext> _contextFactory;
         private readonly ILog _log;
 
-        public AuditMessageRepository(MsSqlContextFactory<AuditMessageContext> contextFactory,
+        public AuditMessageRepository(PostgreSQLContextFactory<AuditMessageContext> contextFactory,
             ILogFactory logFactory)
         {
             _contextFactory = contextFactory;
